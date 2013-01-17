@@ -31,7 +31,7 @@ function generate_diff {
 
     git fetch fedoraproject
 
-    git diff fedoraproject/master upstream/master > ../$OUTDIR/$PROJ.diff
+    git diff fedoraproject/master origin/master > ../$OUTDIR/$PROJ.diff
     popd
 
   done
@@ -65,7 +65,7 @@ done
 cat >> index.html <<-EOF_CAT
 </ul>
 
-** Diffs generated with: <i>git diff fedora/master origin/master</i>
+** Diffs generated with: <i>git diff fedora/master upstream/master</i>
 </body>
 </html>
 EOF_CAT
