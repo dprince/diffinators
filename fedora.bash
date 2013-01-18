@@ -65,9 +65,13 @@ done
 cat >> index.html <<-EOF_CAT
 </ul>
 
+<p>
 ** Diffs generated with: <i>git diff fedora/master upstream/master</i>
+</p>
 
+<p>
 Last updated on: $(date)
+</p>
 </body>
 </html>
 EOF_CAT
