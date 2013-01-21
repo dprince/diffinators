@@ -6,7 +6,7 @@ cd fedora
 #ORIGIN="git@github.com:fedora-openstack"
 ORIGIN="git://github.com/fedora-openstack"
 FEDORA_ORIGIN="git://pkgs.fedoraproject.org"
-OUTDIR="out-report"
+OUTDIR="out-fedora"
 
 mkdir -p $OUTDIR
 
@@ -45,10 +45,10 @@ function generate_report {
 cat > index.html <<-EOF_CAT
 <html>
 <head>
-  <title>Fedora: upstream packager diffs</title>
+  <title>Fedora: package source diffs</title>
 </head>
 <body>
-<h1>Fedora: upstream packager diffs</h1>
+<h1>Fedora: package source diffs</h1>
 
 <h3>Fedora base URL: $FEDORA_ORIGIN</h3>
 <h3>Upstream base URL: $ORIGIN</h3>
