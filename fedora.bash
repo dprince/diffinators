@@ -3,8 +3,8 @@
 mkdir -p fedora
 cd fedora
 
-#ORIGIN="git@github.com:fedora-openstack"
-ORIGIN="git://github.com/fedora-openstack"
+#ORIGIN="git@github.com:redhat-openstack"
+ORIGIN="git://github.com/redhat-openstack"
 FEDORA_ORIGIN="git://pkgs.fedoraproject.org"
 OUTDIR="out-fedora"
 
